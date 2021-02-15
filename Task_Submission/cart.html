@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,follow">
+    <title>Cart</title>
+    <link rel="icon" href="images/smartwatch.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">THE SMART WATCH</a>
+        </div>
+        <div class="navlinkscontainer">
+            <ul class="nav-link">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="catalogue.html">Products</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="cart.html"><img id="cart" src="images/uxwing-svg-icon-editor.svg" alt="imageofcart"></a>
+                </li>
+            </ul>
+        </div>
+    </nav>    
+
+    <div id="cartt" class="cartt">
+        <br>
+        <h2 class="carth2">Your Cart</h2>
+        <div id="cartItem" class="cartItems">
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="discount">
+            <input type="text"  placeholder="Enter Discount Code" id="code">
+            <button id="addDiscount">Add Discount</button>
+        </div>
+        <br>
+        <div class="CorD">
+            <label for="">Select Collection or Delivery</label>
+            <br>
+            <select name="" id="selection">
+                <option value="" id="collection">Collection</option>
+                <option value="" id="delivery">Delivery</option>
+            </select>
+        </div>
+        <br>
+        <div class="deliveryOptions">
+            <label for="">Select Delivery Options</label>
+            <br>
+            <select onchange="expressSelected()" name="" id="">
+                <option value="standard" id="standard">Standard Delivery - Free</option>
+                <option value="express" id="express">Express - R100</option>
+            </select>
+
+        </div>
+        <br>
+        <p id="cartTotal">Your total : </p>
+        <br>
+        <p id="vat">VAT Included : VAT Amount R</p>
+        <br>
+        <button class="checkoutBtn" id="confirmOrder">Confirm Order</button>
+        <br>
+        <br>
+    </div>
+    <br>
+
+    <br>
+
+    <footer>
+        <div class="footer">
+            <ul class="site-links">
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; 2021 THE SMART WATCH</p>
+        </div>
+    </footer>
+
+    
+    <script src="app2.js"></script>
+    
+</body>
+
+</html>
